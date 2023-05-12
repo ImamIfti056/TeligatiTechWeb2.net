@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\css\\home.css"
     },
     {
+      "Id": "C:\\Users\\User\\source\\repos\\TeligatiTech2\\TeligatiTechWeb2\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
       "Id": "C:\\Users\\User\\source\\repos\\TeligatiTech2\\TeligatiTechWeb2\\wwwroot\\css\\products.css",
       "PackagePath": "staticwebassets\\css\\products.css"
     },
@@ -23,6 +27,10 @@
     {
       "Id": "C:\\Users\\User\\source\\repos\\TeligatiTech2\\TeligatiTechWeb2\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\TeligatiTech2\\TeligatiTechWeb2\\wwwroot\\img\\banner3.jpg",
+      "PackagePath": "staticwebassets\\img\\banner3.jpg"
     },
     {
       "Id": "C:\\Users\\User\\source\\repos\\TeligatiTech2\\TeligatiTechWeb2\\wwwroot\\img\\banner5.PNG",
@@ -51,10 +59,6 @@
     {
       "Id": "C:\\Users\\User\\source\\repos\\TeligatiTech2\\TeligatiTechWeb2\\wwwroot\\img\\headphone\\hp1.jpg",
       "PackagePath": "staticwebassets\\img\\headphone\\hp1.jpg"
-    },
-    {
-      "Id": "C:\\Users\\User\\source\\repos\\TeligatiTech2\\TeligatiTechWeb2\\wwwroot\\img\\img.jpg",
-      "PackagePath": "staticwebassets\\img\\img.jpg"
     },
     {
       "Id": "C:\\Users\\User\\source\\repos\\TeligatiTech2\\TeligatiTechWeb2\\wwwroot\\img\\keyboard\\kb1.jpg",

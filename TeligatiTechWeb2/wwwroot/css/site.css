@@ -37,7 +37,6 @@ input {
     border-bottom: 1px solid #0d0d5a;
 }
 
-
 /* ----------------------Class--------------------------- */
 .container {
     width: 90%;
@@ -59,6 +58,7 @@ input {
     width: 100%;
     font-size: 18px;
     font-weight: 700;
+    text-align: center;
     font-family: 'Oxygen', sans-serif;
     margin: 20px 0;
     padding: 12px;

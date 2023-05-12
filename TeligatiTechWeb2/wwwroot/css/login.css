@@ -1,0 +1,74 @@
+﻿#login {
+    margin-top: 40px;
+    color: #0d0d5a;
+}
+
+    #login.flex {
+        align-items: start;
+    }
+
+    #login .top-products {
+        flex-basis: 60%;
+    }
+
+        #login .top-products h1 {
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        #login .top-products .flex {
+            justify-content: start;
+        }
+
+        #login .top-products .flex .card{
+            height: 300px;
+        }
+
+.form-container {
+    background-color: #fff;
+    padding: 50px 60px;
+    margin-top: 5%;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    max-width: 400px;
+    flex-basis: 35%;
+}
+
+    .form-container h1 {
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 40px;
+    }
+
+    .form-container div {
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .form-container p {
+        text-align: right;
+        font-size: 14px;
+        margin-top: -24px;
+        margin-bottom: 20px;
+    }
+
+    .form-container span#msg {
+        display: block;
+        color: red;
+        text-align: right;
+        margin: 0;
+        display: none;
+    }
+
+.btn-login, .btn-createAcc {
+    background-color: #0d0d5a;
+    color: #fff;
+    margin: 40px 0;
+}
+
+.btn-createAcc {
+    background-color: green;
+}

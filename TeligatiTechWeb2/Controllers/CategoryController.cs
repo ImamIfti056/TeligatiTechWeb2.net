@@ -33,7 +33,7 @@ namespace TeligatiTechWeb2.Controllers
             {
                 _context.Categories.Add(category);
                 _context.SaveChanges();
-                TempData["success"] = "Categroy created successfully";
+                TempData["success"] = "Product added successfully";
                 return RedirectToAction("Index");
             }
             return View(category);
@@ -62,7 +62,7 @@ namespace TeligatiTechWeb2.Controllers
             {
                 _context.Categories.Update(category);
                 _context.SaveChanges();
-                TempData["success"] = "Categroy updated successfully";
+                TempData["success"] = "Product updated successfully";
                 return RedirectToAction("Index");
             }
             return RedirectToAction("Index");
@@ -94,7 +94,7 @@ namespace TeligatiTechWeb2.Controllers
             }
             _context.Categories.Remove(category);
             _context.SaveChanges();
-            TempData["success"] = "Categroy deleted successfully";
+            TempData["success"] = "Product deleted successfully";
             return RedirectToAction("Index");
         }
     }

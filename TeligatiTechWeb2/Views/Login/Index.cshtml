@@ -1,0 +1,84 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<section id="login" class="flex container">
+    <div class="top-products">
+        <h1>Top selling products</h1>
+
+        <div class="card-container flex">
+            <div class="card">
+                <div>
+                    <img src="../img/laptop/laptop1.png" alt="laptop">
+                </div>
+                <h3>Asus ROG Flow X13 GV301QE Ryzen 9 5980HS</h3>
+            </div>
+
+            <div class="card">
+                <div>
+                    <img src="../img/gpu/gpu1.jpg" alt="gpu">
+                </div>
+                <h3>MSI GeForce GTX 1650 VENTUS XS 4G OC Graphics Card</h3>
+            </div>
+
+            <div class="card">
+                <div>
+                    <img src="../img/monitor/monitor1.jpg" alt="monitor">
+                </div>
+                <h3>XIAOMI REDMI G24 165HZ 23.8 INCH GAMING MONITOR</h3>
+            </div>
+
+            <div class="card">
+                <div>
+                    <img src="../img/processor/p1.jpg" alt="processor">
+                </div>
+                <h3>INTEL CORE I9-13900F 5.60 GHZ 24 CORES LGA 1700 13TH GEN PROCESSOR</h3>
+            </div>
+
+            <div class="card">
+                <div>
+                    <img src="../img/case/case1.jpg" alt="case">
+                </div>
+                <h3>Lian Li O11D O11 Dynamic ATX Mid Tower Gaming Case</h3>
+            </div>
+
+            <div class="card">
+                <div>
+                    <img src="../img/keyboard/kb1.jpg" alt="kb">
+                </div>
+                <h3>Keychron K2 Wireless RGB Hot Swap Aluminum Frame Mechanical Keyboard</h3>
+            </div>
+
+            <div class="card">
+                <div>
+                    <img src="../img/chair/chair-1.jpg" alt="chair">
+                </div>
+                <h3>Aula F8093 Premium Quality Gaming Chair</h3>
+            </div>
+
+            <div class="card">
+                <div>
+                    <img src="../img/motherboard/mb1.jpg" alt="motherboard">
+                </div>
+                <h3>ASUS TUF GAMING B650M-PLUS WIFI AM5 MICRO-ATX MOTHERBOARD</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <h1>Sign in</h1>
+        <div>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+        </div>
+        <div>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+        </div>
+        <span id="msg">Invalid email or password</span>
+        <button id="btn-login" onclick="check()" class="btn btn-login">Sign in</button>
+        <p><u>Forget Password?</u></p>
+        <hr>
+        <button class="btn btn-createAcc" onclick="createAccount()">Create New Account</button>
+    </div>
+</section>
+

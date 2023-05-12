@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "B1FzwdgIUKiAIsBPDnso/Nb2FgEVNzCgEvXkBRFYYVI=",
+  "Hash": "tfvz5oMjpmcsS9Vz2NNLpdzRN5xuOtVEXMXJHMMtKgw=",
   "Source": "TeligatiTechWeb2",
   "BasePath": "_content/TeligatiTechWeb2",
   "Mode": "Default",
@@ -85,6 +85,23 @@
       "OriginalItemSpec": "wwwroot\\css\\home.css"
     },
     {
+      "Identity": "C:\\Users\\User\\source\\repos\\TeligatiTech2\\TeligatiTechWeb2\\wwwroot\\css\\login.css",
+      "SourceId": "TeligatiTechWeb2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\source\\repos\\TeligatiTech2\\TeligatiTechWeb2\\wwwroot\\",
+      "BasePath": "_content/TeligatiTechWeb2",
+      "RelativePath": "css/login.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\login.css"
+    },
+    {
       "Identity": "C:\\Users\\User\\source\\repos\\TeligatiTech2\\TeligatiTechWeb2\\wwwroot\\css\\products.css",
       "SourceId": "TeligatiTechWeb2",
       "SourceType": "Discovered",
@@ -134,6 +151,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\User\\source\\repos\\TeligatiTech2\\TeligatiTechWeb2\\wwwroot\\img\\banner3.jpg",
+      "SourceId": "TeligatiTechWeb2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\source\\repos\\TeligatiTech2\\TeligatiTechWeb2\\wwwroot\\",
+      "BasePath": "_content/TeligatiTechWeb2",
+      "RelativePath": "img/banner3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\banner3.jpg"
     },
     {
       "Identity": "C:\\Users\\User\\source\\repos\\TeligatiTech2\\TeligatiTechWeb2\\wwwroot\\img\\banner5.PNG",
@@ -253,23 +287,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\headphone\\hp1.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\User\\source\\repos\\TeligatiTech2\\TeligatiTechWeb2\\wwwroot\\img\\img.jpg",
-      "SourceId": "TeligatiTechWeb2",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\source\\repos\\TeligatiTech2\\TeligatiTechWeb2\\wwwroot\\",
-      "BasePath": "_content/TeligatiTechWeb2",
-      "RelativePath": "img/img.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\img.jpg"
     },
     {
       "Identity": "C:\\Users\\User\\source\\repos\\TeligatiTech2\\TeligatiTechWeb2\\wwwroot\\img\\keyboard\\kb1.jpg",
