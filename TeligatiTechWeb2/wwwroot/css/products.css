@@ -1,0 +1,29 @@
+﻿#products .card:hover {
+    box-shadow: 0px 0px 0px rgb(255, 255, 255);
+    border: 1px solid #000;
+    transform: scale(1.01);
+}
+
+#products .card ul {
+    margin: 8px 0;
+    color: black;
+}
+
+#products .card h4 {
+    font-size: 16px;
+}
+
+#products .card .btn {
+    padding: 8px;
+    width: 80%;
+    margin: 14px auto;
+    color: salmon;
+    border: 1px solid salmon;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+    #products .card .btn:hover {
+        background-color: salmon;
+        color: white;
+    }

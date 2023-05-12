@@ -1,0 +1,31 @@
+﻿.banner {
+    background: url("../img/banner5.PNG") center center fixed;
+    height: calc(80vh - 90px);
+    color: #fff;
+}
+
+    .banner.flex {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .banner h1 {
+        font-size: 60px;
+        margin-bottom: 20px;
+        padding: 0 40px;
+    }
+
+.btn-pc-build {
+    width: 25%;
+    border: 2px solid #fff;
+    background-color: #fff;
+    text-align: center;
+    padding: 16px;
+    transition: 400ms;
+    border-radius: 30px;
+}
+
+    .btn-pc-build:hover {
+        background-color: transparent;
+        color: #fff;
+    }

@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TeligatiTechWeb2</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/f52d0be292.js" crossorigin="anonymous"></script>
+    @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/products.css" asp-append-version="true" />
+    @*<link rel="stylesheet" href="~/TeligatiTechWeb2.styles.css" asp-append-version="true" />*@
+</head>
+<body>
+    <header class="flex">
+        <h1><a asp-area="" asp-controller="Home" asp-action="Index">Teligati Tech</a></h1>
+        <nav>
+            <ul class="flex">
+                <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a asp-area="" asp-controller="Category" asp-action="Index">Products</a></li>
+                <li><a asp-area="" asp-controller="About" asp-action="Index">About</a></li>
+                <li><a asp-area="" asp-controller="Login" asp-action="Index">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div>
+        <main role="main">
+            <partial name="_Notification" />
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer>
+        <div class="container flex">
+            <div class="support">
+                <h3 class="footer-title">SUPPORT</h3>
+                <div class="flex">
+                    <i class="fas fa-phone"></i>
+                    <p>+8801914762589</p>
+                </div>
+                <div class="flex">
+                    <i class="fas fa-phone"></i>
+                    <p>+8801716348549</p>
+                </div>
+                <div class="flex">
+                    <i class="fas fa-envelope"></i>
+                    <p>teligati.tech@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="payment">
+                <h3 class="footer-title">PAYMENT</h3>
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-solid fa-rocket"></i>
+                <i class="fa-solid fa-dove"></i>
+            </div>
+
+            <address>
+                <h3 class="footer-title">ADDRESS</h3>
+                <div class="flex">
+                    <i class="fas fa-location"></i>
+                    <p>Fulbarigate, Teligati 9203, Khulna.</p>
+                </div>
+
+                <div class="flex">
+                    <i class="fas fa-clock"></i>
+                    <p>
+                        SAT - THURS
+                        <br>
+                        10AM - 8PM
+                    </p>
+                </div>
+            </address>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

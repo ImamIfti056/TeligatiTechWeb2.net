@@ -1,0 +1,60 @@
+﻿@model Category
+<form method="post">
+    <div class="border p-3 m-4">
+        <div class="row pb-3">
+            <h2>Edit Category</h2>
+        </div>
+
+        <div class="row mb-3">
+            <label asp-for="Component"></label>
+            <select asp-for="Component">
+                <option value="processor">Processor</option>
+                <option value="gpu">GPU</option>
+                <option value="ram">RAM</option>
+                <option value="ssd">SSD</option>
+                <option value="psu">Power Supply</option>
+                <option value="motherboard">Motherboard</option>
+                <option value="cooler">CPU Cooler</option>
+                <option value="case">Casing</option>
+                <option value="hdd">Hard Disk</option>
+                <option value="chair">Chair</option>
+                <option value="headphone">Headphone</option>
+            </select>
+            <span asp-validation-for="Component" class="text-danger"></span>
+        </div>
+
+        <div class="row mb-3">
+            <label asp-for="Name"></label>
+            <input asp-for="Name"  class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="row mb-3">
+            <label asp-for="ImgUrl"></label>
+            <input asp-for="ImgUrl" class="form-control" />
+            <span asp-validation-for="ImgUrl" class="text-danger"></span>
+        </div>
+
+        <div class="row mb-3">
+            <label asp-for="Price"></label>
+            <input asp-for="Price" class="form-control" />
+            <span asp-validation-for="Price" class="text-danger"></span>
+        </div>
+
+        <div class="row mb-3">
+            <label asp-for="Description"></label>
+            <input asp-for="Description" class="form-control" />
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+
+        <button class="btn btn-primary" type="submit">Update</button>
+    </div>
+
+    <a asp-action="Index" asp-controller="Category">go to list</a>
+</form>
+
+@section scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}
