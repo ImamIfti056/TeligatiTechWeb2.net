@@ -5,7 +5,7 @@
 
 
 <div id="products" class="container">
-    <a asp-action="Create" asp-controller="Category" class="btn btn-login">+ Add new product</a>
+    <a asp-action="Create" asp-controller="Category" class="btn btn-login btn-add-product">+ Add new product</a>
     <section id="processor">
         <h2 class="title">Processor</h2>
         <hr class="line" />
@@ -21,9 +21,11 @@
                         <h3 id="name">@item.Name</h3>
                         <p>@item.Description</p>
                         <h4 id="price">Price: @item.Price BDT</h4>
-                        <button class="btn">Buy Now</button>
-                        <span class="text-primary" role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
-                        <span class="text-primary" role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
+                        <button class="btn"><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
+                        <div class="flex">
+                            <span role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
+                            <span role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
+                        </div>
                     </div>                    
                 }
             }
@@ -45,9 +47,11 @@
                         <h3 id="name">@item.Name</h3>
                         <p>@item.Description</p>
                         <h4 id="price">Price: @item.Price BDT</h4>
-                        <button class="btn">Buy Now</button>
-                        <span class="text-primary" role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
-                        <span class="text-primary" role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
+                        <button class="btn"><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
+                        <div class="flex">
+                            <span role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
+                            <span role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
+                        </div>
                     </div>
                 }
             }
@@ -69,9 +73,11 @@
                         <h3 id="name">@item.Name</h3>
                         <p>@item.Description</p>
                         <h4 id="price">Price: @item.Price BDT</h4>
-                        <button class="btn">Buy Now</button>
-                        <span class="text-primary" role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
-                        <span class="text-primary" role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
+                        <button class="btn"><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
+                        <div class="flex">
+                            <span role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
+                            <span role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
+                        </div>
                     </div>
                 }
             }
@@ -93,9 +99,11 @@
                         <h3 id="name">@item.Name</h3>
                         <p>@item.Description</p>
                         <h4 id="price">Price: @item.Price BDT</h4>
-                        <button class="btn">Buy Now</button>
-                        <span class="text-primary" role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
-                        <span class="text-primary" role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
+                        <button class="btn"><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
+                        <div class="flex">
+                            <span role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
+                            <span role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
+                        </div>
                     </div>
                 }
             }
@@ -116,9 +124,11 @@
                         <h3 id="name">@item.Name</h3>
                         <p>@item.Description</p>
                         <h4 id="price">Price: @item.Price BDT</h4>
-                        <button class="btn">Buy Now</button>
-                        <span class="text-primary" role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
-                        <span class="text-primary" role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
+                        <button class="btn"><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
+                        <div class="flex">
+                            <span role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
+                            <span role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
+                        </div>
                     </div>
                 }
             }
@@ -140,9 +150,37 @@
                         <h3 id="name">@item.Name</h3>
                         <p>@item.Description</p>
                         <h4 id="price">Price: @item.Price BDT</h4>
-                        <button class="btn">Buy Now</button>
-                        <span class="text-primary" role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
-                        <span class="text-primary" role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
+                        <button class="btn"><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
+                        <div class="flex">
+                            <span role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
+                            <span role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </section>
+
+    <section id="psu">
+        <h2 class="title">Power Supply</h2>
+        <hr class="line" />
+        <div class="card-container flex">
+            @foreach (var item in Model)
+            {
+                if (@item.Component == "psu")
+                {
+                    <div class="card">
+                        <div>
+                            <img src="@item.ImgUrl" alt="processor">
+                        </div>
+                        <h3 id="name">@item.Name</h3>
+                        <p>@item.Description</p>
+                        <h4 id="price">Price: @item.Price BDT</h4>
+                        <button class="btn"><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
+                        <div class="flex">
+                            <span role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
+                            <span role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
+                        </div>
                     </div>
                 }
             }
@@ -164,9 +202,11 @@
                         <h3 id="name">@item.Name</h3>
                         <p>@item.Description</p>
                         <h4 id="price">Price: @item.Price BDT</h4>
-                        <button class="btn">Buy Now</button>
-                        <span class="text-primary" role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
-                        <span class="text-primary" role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
+                        <button class="btn"><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
+                        <div class="flex">
+                            <span role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
+                            <span role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
+                        </div>
                     </div>
                 }
             }
@@ -188,9 +228,11 @@
                         <h3 id="name">@item.Name</h3>
                         <p>@item.Description</p>
                         <h4 id="price">Price: @item.Price BDT</h4>
-                        <button class="btn">Buy Now</button>
-                        <span class="text-primary" role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
-                        <span class="text-primary" role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
+                        <button class="btn"><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
+                        <div class="flex">
+                            <span role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
+                            <span role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
+                        </div>
                     </div>
                 }
             }
@@ -212,12 +254,40 @@
                         <h3 id="name">@item.Name</h3>
                         <p>@item.Description</p>
                         <h4 id="price">Price: @item.Price BDT</h4>
-                        <button class="btn">Buy Now</button>
-                        <span class="text-primary" role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
-                        <span class="text-primary" role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
+                        <button class="btn"><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
+                        <div class="flex">
+                            <span role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
+                            <span role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
+                        </div>
                     </div>
                 }
             }
         </div>
-    </section>    
+    </section>
+    
+    <section id="headphone">
+        <h2 class="title">Headphone</h2>
+        <hr class="line" />
+        <div class="card-container flex">
+            @foreach (var item in Model)
+            {
+                if (@item.Component == "headphone")
+                {
+                    <div class="card">
+                        <div>
+                            <img src="@item.ImgUrl" alt="processor">
+                        </div>
+                        <h3 id="name">@item.Name</h3>
+                        <p>@item.Description</p>
+                        <h4 id="price">Price: @item.Price BDT</h4>
+                        <button class="btn"><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
+                        <div class="flex">
+                            <span role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
+                            <span role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </section>
 </div>

@@ -12,6 +12,7 @@ namespace TeligatiTechWeb2.Models
         [Required]
         public string Name { get; set; }
         public string Description { get; set; }
+        [DisplayName("Image Link")]
         public string ImgUrl { get; set; }
         [DisplayName("Price")]
         public int Price { get; set; }

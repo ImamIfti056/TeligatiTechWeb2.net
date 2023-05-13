@@ -1,6 +1,10 @@
-﻿#products .btn{
+﻿#products .btn-add-product{
     width: 260px;
     margin-left: auto;
+}
+
+#products .flex.card-container{
+    justify-content: start;
 }
 
 #products .card:hover {
@@ -9,9 +13,8 @@
     transform: scale(1.01);
 }
 
-#products .card ul {
-    margin: 8px 0;
-    color: black;
+#products .card p{
+    margin: 6px 0;
 }
 
 #products .card h4 {
@@ -31,4 +34,67 @@
     #products .card .btn:hover {
         background-color: salmon;
         color: white;
+    }
+
+.products{
+    margin: 40px auto;
+    width: 800px;
+}
+
+    .products div {
+        margin: 16px 0;
+    }
+
+    .products span{
+        color: red;
+    }
+
+    .products > div:nth-of-type(1) {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .products select{
+        display: block;
+        width: 200px;
+        margin-top: 20px;
+        padding: 6px 8px;
+        font-size: 20px;
+        border-radius: 6px ;
+    }
+
+    .products input {
+        border: 1px solid #ccc;
+        border-radius: 6px;
+    }
+
+    .products input:focus{
+        border: 1px solid black;
+    }
+
+    .products label{
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .products .btn {
+        width: 200px;
+        background-color: #0d0d5a;
+        color: white;
+        margin-top: 30px;
+    }
+
+    .products a.btn{
+        width: 160px;
+        font-size: 14px;
+        color: tomato;
+        background-color: white;
+        border: 1px solid tomato;
+        border-radius: 3px;
+        padding: 8px;
+    }
+
+    .products a.btn:hover{
+        color: white;
+        background-color: tomato;
     }

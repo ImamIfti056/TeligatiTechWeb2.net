@@ -1,11 +1,11 @@
 ﻿@model Category
-<form method="post">
-    <div class="border p-3 m-4">
-        <div class="row pb-3">
-            <h2>Edit Category</h2>
-        </div>
 
-        <div class="row mb-3">
+<div class="container products" id="edit-product">
+    <div>
+        <h1>Edit Informations</h1>
+    </div>
+    <form method="post">
+        <div>
             <label asp-for="Component"></label>
             <select asp-for="Component">
                 <option value="processor">Processor</option>
@@ -20,38 +20,37 @@
                 <option value="chair">Chair</option>
                 <option value="headphone">Headphone</option>
             </select>
-            <span asp-validation-for="Component" class="text-danger"></span>
+            <span asp-validation-for="Component"></span>
         </div>
 
-        <div class="row mb-3">
+        <div>
             <label asp-for="Name"></label>
-            <input asp-for="Name"  class="form-control" />
-            <span asp-validation-for="Name" class="text-danger"></span>
+            <input asp-for="Name" />
+            <span asp-validation-for="Name"></span>
         </div>
 
-        <div class="row mb-3">
+        <div>
             <label asp-for="ImgUrl"></label>
-            <input asp-for="ImgUrl" class="form-control" />
-            <span asp-validation-for="ImgUrl" class="text-danger"></span>
+            <input asp-for="ImgUrl" />
+            <span asp-validation-for="ImgUrl"></span>
         </div>
 
-        <div class="row mb-3">
+        <div>
             <label asp-for="Price"></label>
-            <input asp-for="Price" class="form-control" />
-            <span asp-validation-for="Price" class="text-danger"></span>
+            <input asp-for="Price" />
+            <span asp-validation-for="Price"></span>
         </div>
 
-        <div class="row mb-3">
+        <div>
             <label asp-for="Description"></label>
-            <input asp-for="Description" class="form-control" />
-            <span asp-validation-for="Description" class="text-danger"></span>
+            <input asp-for="Description" />
+            <span asp-validation-for="Description"></span>
         </div>
 
-        <button class="btn btn-primary" type="submit">Update</button>
-    </div>
-
-    <a asp-action="Index" asp-controller="Category">go to list</a>
-</form>
+        <button class="btn" type="submit">Update</button>
+    </form>
+    <a asp-action="Index" asp-controller="Category" class="btn">Back to Products</a>
+</div>
 
 @section scripts{
     @{
