@@ -43,7 +43,6 @@ input {
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 20px;
-    /* background-color: yellow; */
 }
 
 .flex {
@@ -124,6 +123,11 @@ header {
     background-color: #000;
     color: white;
     height: 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
 }
 
     header.flex {
@@ -134,18 +138,22 @@ header {
         font-size: 42px;
     }
 
-    header nav li {
-        margin: 0 20px;
-        font-size: 20px;
-    }
-
-        header nav li a:hover {
-            color: lime;
-        }
-
     header a {
         color: #fff;
     }
+
+    header nav li a {
+        font-size: 20px;
+        margin: 0 10px;
+        padding: 10px 16px;
+        font-weight: 600;
+    }
+
+        header nav li a:hover {
+            background-color: #fff;
+            color: #0d0d5a;
+            border-radius: 24px;
+        }
 /* --------------Navbar---------------------- */
 
 

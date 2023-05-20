@@ -2,6 +2,7 @@
     background: url("../img/banner5.PNG") center center fixed;
     height: calc(80vh - 90px);
     color: #fff;
+    margin-top: 90px;
 }
 
     .banner.flex {
@@ -29,3 +30,12 @@
         background-color: transparent;
         color: #fff;
     }
+
+#components{
+    padding-top: 20px;
+}
+
+#components .title{
+    margin-top: 10px;
+    padding-top: 60px;
+}

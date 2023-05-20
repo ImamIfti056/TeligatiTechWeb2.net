@@ -10,12 +10,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/f52d0be292.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
     @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/products.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
-    @*<link rel="stylesheet" href="~/TeligatiTechWeb2.styles.css" asp-append-version="true" />*@
+    <link rel="stylesheet" href="~/css/about.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/cart.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/account-manage.css" asp-append-version="true" />
+    @*<link rel="sty lesheet" href="~/TeligatiTechWeb2.styles.css" asp-append-version="true" />*@
 </head>
 <body>
     <header class="flex">
@@ -27,6 +31,7 @@
                 @*<li><a asp-area="" asp-controller="Category" asp-action="Index">Products</a></li>*@
                 <li><a asp-area="" asp-controller="About" asp-action="Index">About</a></li>
                 <li><a asp-area="" asp-controller="Login" asp-action="Index">Login</a></li>
+                <partial name="_LoginPartial" />
             </ul>
         </nav>
     </header>
@@ -84,9 +89,12 @@
         </div>
     </footer>
 
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS -->
+    @*<script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>*@
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/login.js" asp-append-version="true"></script>
+    <script src="~/js/products.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

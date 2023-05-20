@@ -1,17 +1,18 @@
 ﻿#about {
     line-height: 1.5;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    margin-top: 130px;
 }
 
     #about .flex {
         align-items: start;
     }
 
-        #about .flex div:nth-child(1) {
+        #about .flex > div:nth-child(1) {
             flex-basis: 45%;
         }
 
-        #about .flex div:nth-child(2) {
+        #about .flex > div:nth-child(2) {
             flex-basis: 45%;
         }
 
