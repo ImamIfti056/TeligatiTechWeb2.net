@@ -1,6 +1,12 @@
 ﻿.identity {
     margin-top: 130px;
+    margin-bottom: 70px;
     color: #0d0d5a;
+}
+
+.identity#login, .identity#register{
+    margin-top: 70px;
+    margin-bottom: 50px;
 }
 
 .identity-nav li {
@@ -10,4 +16,37 @@
 
 .identity .identity-sub{
     margin-top: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .identity#login, .identity#register {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    #login .flex, #register .flex{
+        align-items: start;
+    }
+    #login form h1, #register form h1{
+        font-size: 26px;
+    }
+    #login form div, #register form div{
+        margin: 0;
+    }
+    #login form label, #login form input, #register form label, #register form input {
+        font-size: 18px;
+        margin: 8px 0;
+    }
+    #login form input, #register form input {
+        margin: 6px 0;
+        padding: 4px;
+    }
+    #login form p a, #register form p a{
+        font-size: 12px;
+        margin: 2px;
+    }
+
+    #login .flex img, #register .flex img {
+        height: 250px;
+        width: 200px;
+    }
 }

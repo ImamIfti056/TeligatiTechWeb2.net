@@ -1,27 +1,27 @@
-﻿#login {
+﻿.login {
     margin-top: 130px;
     color: #0d0d5a;
 }
 
-    #login.flex {
+    .login.flex {
         align-items: start;
     }
 
-    #login .top-products {
+    .login .top-products {
         flex-basis: 60%;
     }
 
-        #login .top-products h1 {
+        .login .top-products h1 {
             font-size: 30px;
             text-align: center;
             margin-bottom: 40px;
         }
 
-        #login .top-products .flex {
+        .login .top-products .flex {
             justify-content: start;
         }
 
-        #login .top-products .flex .card{
+        .login .top-products .flex .card{
             height: 300px;
         }
 

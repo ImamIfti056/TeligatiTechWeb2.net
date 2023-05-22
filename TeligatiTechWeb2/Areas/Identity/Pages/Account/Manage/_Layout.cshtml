@@ -12,15 +12,21 @@
 <section class="container identity">
     <h1 class="title">Manage your account</h1>
     <hr class="line"/>
-
-    <div>        
+    <div class="flex">
         <div>
-            <partial name="_ManageNav" />
+            <div>
+                <partial name="_ManageNav" />
+            </div>
+            <div class="identity-sub">
+                @RenderBody()
+            </div>
         </div>
-        <div class="identity-sub">
-            @RenderBody()
-        </div>        
+
+        <div>
+            <img src="https://cdn.pixabay.com/photo/2014/10/09/13/14/settings-481826_960_720.png" alt="setting icon" width="350px" height="350px"/>
+        </div>
     </div>
+    
 
 </section>
 

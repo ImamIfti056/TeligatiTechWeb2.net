@@ -196,3 +196,76 @@ footer {
             font-size: 32px;
             margin: 6px;
         }
+
+
+@media only screen and (max-width: 600px) {
+    header.flex {
+        flex-direction: column;
+    }
+    header h1 a{
+        font-size: 26px;
+        text-align: center;
+    }
+    header nav li a{
+        font-size: 16px;
+        margin: 10px 0;
+        padding: 8px;
+    }
+
+    .title {
+        font-size: 20px;
+        margin: 20px 0;
+        margin-bottom: 10px;
+    }
+
+    .line {
+        width: 140px;
+    }
+
+    .btn-login, .btn-createAcc{
+        padding: 6px;
+        font-size: 14px;
+        margin: 10px;
+    }
+
+    .card-container {
+        margin: 20px auto;
+    }
+
+        .card-container .card {
+            width: 90px;
+            border-radius: 4px;
+            margin: 4px;
+            padding: 10px 6px;
+            font-size: 10px;
+        }
+
+            .card-container .card h3 {
+                border-top: 2px solid #0d0d5a;
+                padding-top: 6px;
+            }
+
+    footer {
+        padding: 10px 0;
+        line-height: 1.2;
+        letter-spacing: 0.5px;
+        font-size: 12px;
+    }
+
+        footer .container .flex {
+            justify-content: start;
+        }
+
+        footer .footer-title {
+            color: orangered;
+            margin: 6px 0;
+        }
+
+        footer .container .flex i {
+            margin-right: 4px;
+        }
+            footer .container .payment i {
+                font-size: 18px;
+                margin: 4px;
+            }
+}

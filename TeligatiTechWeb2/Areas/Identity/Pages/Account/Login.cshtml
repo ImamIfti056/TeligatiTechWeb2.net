@@ -6,9 +6,9 @@
 }
 
 <h1>@ViewData["Title"]</h1>
-<div class="identity container">
+<div id="login" class="identity container">
     <div>
-        <section>
+        <section class="flex">
             <form id="account" method="post" class="form-container">
                 <h1>Sign in</h1>
                 <div asp-validation-summary="ModelOnly" role="alert" class="msg"></div>
@@ -37,13 +37,14 @@
                         <a id="forgot-password" asp-page="./ForgotPassword">Forgot password?</a>
                     </p>
                     <p>
-                        <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register</a>
+                        <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl" class="btn btn-createAcc">Create New Account</a>
                     </p>
                     @*<p>
                         <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a>
                     </p>*@
                 </div>
             </form>
+            <img src="https://img.freepik.com/free-vector/sign-concept-illustration_114360-5425.jpg?w=2000" width="550px" heigth="550px" />
         </section>
     </div>
 

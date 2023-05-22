@@ -6,8 +6,8 @@
 
 <h1>@ViewData["Title"]</h1>
 
-<div class="container identity">
-    <div>
+<div id="register" class="container identity">
+    <div class="flex">
         <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-container">
             <h1>Create New Account</h1>
             <div asp-validation-summary="ModelOnly" role="alert" class="msg"></div>
@@ -31,6 +31,7 @@
                 <a asp-page="./Login" asp-route-returnUrl="@Model.ReturnUrl">Already have an account?</a>
             </p>
         </form>
+        <img src="https://img.freepik.com/free-vector/sign-concept-illustration_114360-5425.jpg?w=2000" width="550px" heigth="550px" />
     </div>
     @*<div>
         <section>
