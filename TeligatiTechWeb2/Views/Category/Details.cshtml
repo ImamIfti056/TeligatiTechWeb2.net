@@ -1,0 +1,24 @@
+﻿@model TeligatiTechWeb2.Models.Cart
+
+
+<section class="container" id="cart">
+    <h1>@Model.category.Name</h1>
+    <div class="flex">
+        <img src="@Model.category.ImgUrl" />
+        <div class="component-details">
+            <div class="flex">
+                <h2>Component: </h2>
+                <p>@Model.category.Component</p>
+            </div>
+            <div class="flex">
+                <h2>Price: </h2>
+                <p>@Model.category.Price BDT</p>
+            </div>
+            <div class="flex">
+                <h2>Description: </h2>
+                <p>@Model.category.Description</p>
+            </div>
+            <button class="btn">Add to Cart</button>
+        </div>
+    </div>
+</section>

@@ -97,5 +97,16 @@ namespace TeligatiTechWeb2.Controllers
             TempData["success"] = "Product deleted successfully";
             return RedirectToAction("Index");
         }
+
+        [HttpGet]
+        public IActionResult Details(int? id)
+        {
+            Cart cart = new Cart()
+            {
+                category = _context.Categories.Find(id),
+                Count=1
+            };
+            return View(cart);
+        }
     }
 }
