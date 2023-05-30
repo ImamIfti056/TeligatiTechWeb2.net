@@ -1,0 +1,51 @@
+﻿#about {
+    line-height: 1.5;
+    letter-spacing: 1px;
+    margin-top: 130px;
+}
+
+    #about .flex {
+        align-items: start;
+    }
+
+        #about .flex > div:nth-child(1) {
+            flex-basis: 45%;
+        }
+
+        #about .flex > div:nth-child(2) {
+            flex-basis: 45%;
+        }
+
+    #about > div {
+        margin: 40px;
+    }
+
+    #about div h2 {
+        margin: 16px 0;
+    }
+
+
+@media only screen and (max-width: 600px) {
+    #about {
+        line-height: 1.2;
+        letter-spacing: 0.5px;
+        margin-top: 120px;
+        font-size: 14px;
+    }
+        #about .flex {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        #about > div {
+            margin: 20px;
+        }
+
+        #about div h2 {
+            margin: 10px 0;
+        }
+        #about img{
+            height: 200px;
+            margin: 0 auto;
+        }
+}

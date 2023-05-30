@@ -9,7 +9,8 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-});
+/*    options.UseSqlServer("Data Source=SQL5110.site4now.net,1433;Initial Catalog=db_a99eb2_teligatitechdb;User Id=db_a99eb2_teligatitechdb_admin;Password=1234Db5678#; ");
+*/});
 
 /*builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<ApplicationDbContext>();*/
 

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\TeligatiTechWeb2.props" />
+</Project>

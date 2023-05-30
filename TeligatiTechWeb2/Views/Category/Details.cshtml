@@ -1,5 +1,8 @@
 ﻿@model TeligatiTechWeb2.Models.Cart
+@using Microsoft.AspNetCore.Identity
 
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
 
 <section class="container" id="cart">
     <h1>@Model.category.Name</h1>
@@ -18,7 +21,26 @@
                 <h2>Description: </h2>
                 <p>@Model.category.Description</p>
             </div>
-            <button class="btn">Add to Cart</button>
+            <div class="flex">
+                <h2>Quantity: </h2>
+                @*<label asp-for="Count" ></label>*@
+                <input onchange="total()" name="count" id="count" asp-for="Count" min="1" />
+                <span asp-validation-for="Count"></span>
+            </div>
+            <div class="flex">
+                <h2>Total Price: </h2>
+                <p id="totalPrice">@Model.category.Price</p>
+            </div>
+            <button class="btn">Go to Payment</button>
+            <a asp-action="Index" asp-controller="Category" class="btn">Back to Products</a>
         </div>
     </div>
 </section>
+
+
+<script>
+    function total(){
+        const quantity = document.getElementById("count").value;
+        document.getElementById("totalPrice").innerHTML = quantity*@Model.category.Price;
+    }
+</script>

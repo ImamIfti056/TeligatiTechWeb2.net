@@ -2,10 +2,16 @@
 @{
     ViewData["Title"] = "Index";
 }
+@using Microsoft.AspNetCore.Identity
 
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
 
 <div id="products" class="container">
-    <a asp-action="Create" asp-controller="Category" class="btn btn-login btn-add-product">+ Add new product</a>
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <a asp-action="Create" asp-controller="Category" class="btn btn-login btn-add-product">+ Add new product</a>        
+    }
     <section id="processor">
         <h2 class="title">Processor</h2>
         <hr class="line" />
@@ -22,10 +28,13 @@
                         <p>@item.Description</p>
                         <h4 id="price">Price: @item.Price BDT</h4>                       
                          <a class="btn" asp-action="Details" asp-controller="category" asp-route-id="@item.Id"><i class="fa-solid fa-cart-shopping"></i> Buy Now</a>
-                        <div class="flex">
-                            <span role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
-                            <span role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
-                        </div>
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            <div class="flex">
+                                <span role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
+                                <span role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
+                            </div>
+                        }
                     </div>                    
                 }
             }
@@ -48,10 +57,13 @@
                         <p>@item.Description</p>
                         <h4 id="price">Price: @item.Price BDT</h4>
                         <a class="btn" asp-action="Details" asp-controller="category" asp-route-id="@item.Id"><i class="fa-solid fa-cart-shopping"></i> Buy Now</a>
-                        <div class="flex">
-                            <span role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
-                            <span role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
-                        </div>
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            <div class="flex">
+                                <span role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
+                                <span role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
+                            </div>
+                        }
                     </div>
                 }
             }
@@ -74,10 +86,13 @@
                         <p>@item.Description</p>
                         <h4 id="price">Price: @item.Price BDT</h4>
                         <a class="btn" asp-action="Details" asp-controller="category" asp-route-id="@item.Id"><i class="fa-solid fa-cart-shopping"></i> Buy Now</a>
-                        <div class="flex">
-                            <span role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
-                            <span role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
-                        </div>
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            <div class="flex">
+                                <span role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
+                                <span role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
+                            </div>
+                        }
                     </div>
                 }
             }
@@ -100,10 +115,13 @@
                         <p>@item.Description</p>
                         <h4 id="price">Price: @item.Price BDT</h4>
                         <a class="btn" asp-action="Details" asp-controller="category" asp-route-id="@item.Id"><i class="fa-solid fa-cart-shopping"></i> Buy Now</a>
-                        <div class="flex">
-                            <span role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
-                            <span role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
-                        </div>
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            <div class="flex">
+                                <span role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
+                                <span role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
+                            </div>
+                        }
                     </div>
                 }
             }
@@ -125,10 +143,13 @@
                         <p>@item.Description</p>
                         <h4 id="price">Price: @item.Price BDT</h4>
                         <a class="btn" asp-action="Details" asp-controller="category" asp-route-id="@item.Id"><i class="fa-solid fa-cart-shopping"></i> Buy Now</a>
-                        <div class="flex">
-                            <span role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
-                            <span role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
-                        </div>
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            <div class="flex">
+                                <span role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
+                                <span role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
+                            </div>
+                        }
                     </div>
                 }
             }
@@ -151,10 +172,13 @@
                         <p>@item.Description</p>
                         <h4 id="price">Price: @item.Price BDT</h4>
                         <a class="btn" asp-action="Details" asp-controller="category" asp-route-id="@item.Id"><i class="fa-solid fa-cart-shopping"></i> Buy Now</a>
-                        <div class="flex">
-                            <span role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
-                            <span role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
-                        </div>
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            <div class="flex">
+                                <span role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
+                                <span role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
+                            </div>
+                        }
                     </div>
                 }
             }
@@ -177,10 +201,13 @@
                         <p>@item.Description</p>
                         <h4 id="price">Price: @item.Price BDT</h4>
                         <a class="btn" asp-action="Details" asp-controller="category" asp-route-id="@item.Id"><i class="fa-solid fa-cart-shopping"></i> Buy Now</a>
-                        <div class="flex">
-                            <span role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
-                            <span role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
-                        </div>
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            <div class="flex">
+                                <span role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
+                                <span role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
+                            </div>
+                        }
                     </div>
                 }
             }
@@ -203,10 +230,13 @@
                         <p>@item.Description</p>
                         <h4 id="price">Price: @item.Price BDT</h4>
                         <a class="btn" asp-action="Details" asp-controller="category" asp-route-id="@item.Id"><i class="fa-solid fa-cart-shopping"></i> Buy Now</a>
-                        <div class="flex">
-                            <span role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
-                            <span role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
-                        </div>
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            <div class="flex">
+                                <span role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
+                                <span role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
+                            </div>
+                        }
                     </div>
                 }
             }
@@ -229,10 +259,13 @@
                         <p>@item.Description</p>
                         <h4 id="price">Price: @item.Price BDT</h4>
                         <a class="btn" asp-action="Details" asp-controller="category" asp-route-id="@item.Id"><i class="fa-solid fa-cart-shopping"></i> Buy Now</a>
-                        <div class="flex">
-                            <span role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
-                            <span role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
-                        </div>
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            <div class="flex">
+                                <span role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
+                                <span role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
+                            </div>
+                        }
                     </div>
                 }
             }
@@ -255,10 +288,13 @@
                         <p>@item.Description</p>
                         <h4 id="price">Price: @item.Price BDT</h4>
                         <a class="btn" asp-action="Details" asp-controller="category" asp-route-id="@item.Id"><i class="fa-solid fa-cart-shopping"></i> Buy Now</a>
-                        <div class="flex">
-                            <span role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
-                            <span role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
-                        </div>
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            <div class="flex">
+                                <span role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
+                                <span role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
+                            </div>
+                        }
                     </div>
                 }
             }
@@ -281,10 +317,13 @@
                         <p>@item.Description</p>
                         <h4 id="price">Price: @item.Price BDT</h4>
                         <a class="btn" asp-action="Details" asp-controller="category" asp-route-id="@item.Id"><i class="fa-solid fa-cart-shopping"></i> Buy Now</a>
-                        <div class="flex">
-                            <span role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
-                            <span role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
-                        </div>
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            <div class="flex">
+                                <span role="group"><a asp-action="Edit" asp-controller="category" asp-route-id="@item.Id">Edit</a></span>
+                                <span role="group"><a asp-action="Delete" asp-controller="category" asp-route-id="@item.Id">Delete</a></span>
+                            </div>
+                        }
                     </div>
                 }
             }

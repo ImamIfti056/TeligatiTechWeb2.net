@@ -8,12 +8,12 @@ namespace TeligatiTechWeb2.Models
         public Category category { get; set; }
         public int Id { get; set; }
         public int Count { get; set; }
-        public string Component { get; set; }
+        /*public string Component { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         [DisplayName("Image Link")]
         public string ImgUrl { get; set; }
         [DisplayName("Price")]
-        public int Price { get; set; }
+        public int Price { get; set; }*/
     }
 }
