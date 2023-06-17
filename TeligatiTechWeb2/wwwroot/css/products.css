@@ -54,6 +54,21 @@
         color: white;
     }
 
+    #products #btn-cart {
+        background-color: #0d0d5a;
+        border-radius: 50%;
+        width: 4%;
+        font-size: 14px;
+        display: block;
+        border: none;
+        position: fixed;
+        bottom: 50px;
+        right: 80px;
+    }
+    #products #btn-cart:hover{
+        color: white;
+    }
+
 .products{
     margin: 40px auto;
     margin-top: 120px;

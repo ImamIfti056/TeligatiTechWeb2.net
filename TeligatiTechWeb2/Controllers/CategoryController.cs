@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System.Net.NetworkInformation;
 using TeligatiTechWeb2.Data;
 using TeligatiTechWeb2.Models;
 
@@ -18,6 +19,11 @@ namespace TeligatiTechWeb2.Controllers
         {
             IEnumerable<Category> categories = _context.Categories;
             return View(categories);
+        }
+
+        public IActionResult Cart()
+        {
+            return View();
         }
 
         [HttpGet]
@@ -102,6 +108,7 @@ namespace TeligatiTechWeb2.Controllers
         [HttpGet]
         public IActionResult Details(int? id)
         {
+
             Cart cart = new Cart()
             {
                 category = _context.Categories.Find(id),

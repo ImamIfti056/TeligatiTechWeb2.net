@@ -4,7 +4,7 @@
 @inject SignInManager<IdentityUser> SignInManager
 @inject UserManager<IdentityUser> UserManager
 
-<section class="container" id="cart">
+<section class="container" id="details">
     <h1>@Model.category.Name</h1>
     <div class="flex">
         <img src="@Model.category.ImgUrl" />
@@ -31,10 +31,16 @@
                 <h2>Total Price: </h2>
                 <p id="totalPrice">@Model.category.Price</p>
             </div>
-            <button class="btn">Go to Payment</button>
-            <a asp-action="Index" asp-controller="Category" class="btn">Back to Products</a>
+            <button class="btn" onclick="addToCart(@Model.category.Id, '@Model.category.Name', @Model.category.Price), total()">+ Add to Cart</button>
+            <a asp-action="Index" asp-controller="Category" class="btn"> &lt; Back to Products</a>
+            @if (SignInManager.IsSignedIn(User))
+            {
+                <a asp-action="Cart" asp-controller="Category" id="btn-cart" class="btn btn-login"><i class="fa-solid fa-cart-shopping"></i><br />Go to Cart</a>                
+            }
+
         </div>
     </div>
+    <h2 id="cartMsg">Product Added To Cart</h2>
 </section>
 
 

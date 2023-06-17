@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewData["Title"] = "Cart";
+}
+<div id="cartView" class="container">
+    <h1 class="title">Cart</h1>
+    <hr class="line"/>
+    <table id="cartTable">
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+        </tr>
+    </table>
+    <h2>Total Price:  <span id="totalPrice" style="color: red"></span> BDT</h2>
+    <button onclick="clearCart()" class="btn">Clear Cart</button>
+    <a asp-action="Index" asp-controller="Category" class="btn"> &lt; Back to Products</a>
+</div>
+
+<script>
+
+    function clearCart() {
+        localStorage.removeItem('cart');
+    }
+
+
+    let savedCart = localStorage.getItem('cart');
+    let cart = {};
+    if (savedCart) {
+        cart = JSON.parse(savedCart);
+    }
+    let totalPrice = 0;
+    for(const item in cart){
+        const name = cart[item][0];
+        const price = cart[item][1];
+        totalPrice += price;
+        const cartTable = document.getElementById('cartTable');
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+            <td>${name}</td>
+            <td>${price}</td>
+            `;
+        tr.classList.add('item')
+        cartTable.appendChild(tr);
+    }
+    document.getElementById('totalPrice').innerHTML = `${totalPrice}`;
+
+</script>

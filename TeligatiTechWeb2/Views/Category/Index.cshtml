@@ -11,7 +11,9 @@
     @if (SignInManager.IsSignedIn(User))
     {
         <a asp-action="Create" asp-controller="Category" class="btn btn-login btn-add-product">+ Add new product</a>        
+        <a asp-action="Cart" asp-controller="Category" id="btn-cart" class="btn btn-login"><i class="fa-solid fa-cart-shopping"></i><br />Go to Cart</a>
     }
+
     <section id="processor">
         <h2 class="title">Processor</h2>
         <hr class="line" />

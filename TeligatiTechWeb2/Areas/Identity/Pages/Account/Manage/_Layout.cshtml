@@ -1,4 +1,9 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@{
     if (ViewData.TryGetValue("ParentLayout", out var parentLayout) && parentLayout !=  null)
     {
         Layout = parentLayout.ToString();
@@ -12,6 +17,7 @@
 <section class="container identity">
     <h1 class="title">Manage your account</h1>
     <hr class="line"/>
+    <h1>Hello @UserManager.GetUserName(User)</h1>
     <div class="flex">
         <div>
             <div>

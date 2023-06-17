@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\css\\cart.css"
     },
     {
+      "Id": "C:\\Users\\User\\source\\repos\\TeligatiTech2\\TeligatiTechWeb2\\wwwroot\\css\\details.css",
+      "PackagePath": "staticwebassets\\css\\details.css"
+    },
+    {
       "Id": "C:\\Users\\User\\source\\repos\\TeligatiTech2\\TeligatiTechWeb2\\wwwroot\\css\\home.css",
       "PackagePath": "staticwebassets\\css\\home.css"
     },
@@ -107,14 +111,6 @@
     {
       "Id": "C:\\Users\\User\\source\\repos\\TeligatiTech2\\TeligatiTechWeb2\\wwwroot\\img\\ssd\\ssd1.jpg",
       "PackagePath": "staticwebassets\\img\\ssd\\ssd1.jpg"
-    },
-    {
-      "Id": "C:\\Users\\User\\source\\repos\\TeligatiTech2\\TeligatiTechWeb2\\wwwroot\\js\\login.js",
-      "PackagePath": "staticwebassets\\js\\login.js"
-    },
-    {
-      "Id": "C:\\Users\\User\\source\\repos\\TeligatiTech2\\TeligatiTechWeb2\\wwwroot\\js\\products.js",
-      "PackagePath": "staticwebassets\\js\\products.js"
     },
     {
       "Id": "C:\\Users\\User\\source\\repos\\TeligatiTech2\\TeligatiTechWeb2\\wwwroot\\js\\site.js",

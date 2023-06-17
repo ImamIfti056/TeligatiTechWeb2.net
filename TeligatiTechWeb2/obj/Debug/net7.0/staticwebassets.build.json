@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5+IaYACsW/r7gE+ZzIIwIXPxrMyl5QUM1JkH5NfpYRU=",
+  "Hash": "+pFOu+NeOSThvc0TmqeKGR54WAHHmK9n+l0EzlSBUwM=",
   "Source": "TeligatiTechWeb2",
   "BasePath": "_content/TeligatiTechWeb2",
   "Mode": "Default",
@@ -1122,6 +1122,23 @@
       "OriginalItemSpec": "wwwroot\\css\\cart.css"
     },
     {
+      "Identity": "C:\\Users\\User\\source\\repos\\TeligatiTech2\\TeligatiTechWeb2\\wwwroot\\css\\details.css",
+      "SourceId": "TeligatiTechWeb2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\source\\repos\\TeligatiTech2\\TeligatiTechWeb2\\wwwroot\\",
+      "BasePath": "_content/TeligatiTechWeb2",
+      "RelativePath": "css/details.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\details.css"
+    },
+    {
       "Identity": "C:\\Users\\User\\source\\repos\\TeligatiTech2\\TeligatiTechWeb2\\wwwroot\\css\\home.css",
       "SourceId": "TeligatiTechWeb2",
       "SourceType": "Discovered",
@@ -1511,40 +1528,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\ssd\\ssd1.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\User\\source\\repos\\TeligatiTech2\\TeligatiTechWeb2\\wwwroot\\js\\login.js",
-      "SourceId": "TeligatiTechWeb2",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\source\\repos\\TeligatiTech2\\TeligatiTechWeb2\\wwwroot\\",
-      "BasePath": "_content/TeligatiTechWeb2",
-      "RelativePath": "js/login.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\login.js"
-    },
-    {
-      "Identity": "C:\\Users\\User\\source\\repos\\TeligatiTech2\\TeligatiTechWeb2\\wwwroot\\js\\products.js",
-      "SourceId": "TeligatiTechWeb2",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\source\\repos\\TeligatiTech2\\TeligatiTechWeb2\\wwwroot\\",
-      "BasePath": "_content/TeligatiTechWeb2",
-      "RelativePath": "js/products.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\products.js"
     },
     {
       "Identity": "C:\\Users\\User\\source\\repos\\TeligatiTech2\\TeligatiTechWeb2\\wwwroot\\js\\site.js",

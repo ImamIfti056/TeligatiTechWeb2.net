@@ -1,102 +1,28 @@
-﻿#cart{
-    margin-top: 100px;
-    margin-bottom: 30px;
-    padding: 40px 0;
+﻿#cartView{
+    margin-top: 110px;
 }
 
-#cart h1{
+#cartView table{
+    width: 80%;
+    margin: 20px auto;
+}
+#cartView table tr:nth-child(2n+1){
+    background-color: #eee;
+}
+#cartView table td, #cartView table th{
     text-align: center;
-    font-size: 40px;
-    margin-bottom: 50px;
+    border: 1px solid #ccc;
+    padding: 20px 10px;
 }
 
-#cart > .flex{
-    align-items: start;
+#cartView h2{
+    text-align: right;
+    margin-right: 100px;
 }
 
-#cart > .flex img{
-    flex-basis: 40%;
-}
-
-#cart > .flex .component-details{
-    flex-basis: 50%;
-}
-
-    #cart .component-details .flex{
-        margin: 20px 0;
-    }
-
-        #cart .component-details .flex h2{
-            font-size: 26px;
-            text-transform: uppercase;
-            margin-right: 30px;
-        }
-        #cart .component-details .flex p{
-            font-size: 20px;
-        }
-        #cart .component-details .flex #totalPrice{
-            color: red;
-            font-weight: bold;
-            font-size: 24px;
-        }
-        #cart .component-details .flex:nth-child(1) p{
-            text-transform: uppercase;
-        }
-        #cart .component-details button.btn{
-            background-color: orangered;
-            border-color: orangered;
-            color: white;
-            margin: 50px 4%;
-            width: 50%;
-            display: inline-block;
-        }
-        #cart .component-details a.btn {
-            margin: 50px 0;
-            width: 40%;
-            display: inline-block;
-        }   
-        #cart .component-details button.btn:hover{
-            background-color: white;
-            color: orangered;
-        }
-
-
-@media only screen and (max-width: 600px){
-    #cart {
-        margin-top: 90px;
-        margin-bottom: 20px;
-        padding: 30px 0;
-    }
-
-        #cart h1 {
-            text-align: center;
-            font-size: 24px;
-            margin-bottom: 30px;
-        }
-        #cart > .flex {
-            flex-direction: column;
-            align-items: center;
-        }
-            #cart > .flex img {
-                height: 150px;
-                width: 150px;
-            }
-
-        #cart .component-details .flex h2 {
-            font-size: 18px;
-        }
-
-        #cart .component-details .flex p {
-            font-size: 16px;
-        }
-
-        #cart .component-details .btn {
-            width: 80%;
-            margin: 40px auto;
-        }
-
-            #cart .component-details .btn:hover {
-                background-color: white;
-                color: orangered;
-            }
+#cartView .btn{
+    width: 8%;
+    font-size: 14px;
+    border-radius: 50%;
+    margin-left: auto;
 }
