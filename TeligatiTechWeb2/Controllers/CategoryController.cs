@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Net.NetworkInformation;
 using TeligatiTechWeb2.Data;
@@ -106,6 +107,7 @@ namespace TeligatiTechWeb2.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public IActionResult Details(int? id)
         {
 
